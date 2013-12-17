@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="landrupdans.master.cs" Inherits="landrupdans.landrupdans" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="logo">
+        </div>
+        <!--logo-->
+
+        <div id="topmenu">
+
+            <ul>
+                <li>Stilarter
+                    <li class="submenu"><a href="stilarter.aspx">Gå til stilarter</a></li>
+                </li>
+
+                <li>Om Skolen
+                    <li class="submenu"><a href="undervisningsPrincipper.aspx">Undervisningsprincipper</a></li>
+                    <li class="submenu"><a href="instruktorer.aspx">Instruktører</a></li>
+                    <!--skal stå noget om instruktørerne og hvad de underviser i-->
+                    <li class="submenu"><a href="historie.aspx">Historie</a></li>
+                    <li class="submenu"><a href="priser.aspx">Priser</a></li>
+                    <li class="submenu"><a href="adresse.aspx">Adresse</a></li>
+                </li>
+
+                <li>Turneringer
+                    <li class="submenu"><a href="turneringsKalender.aspx">Kalender</a></li>
+                    <li class="submenu"><a href="turneringsVindere.aspx">Turneringsvindere</a></li>
+                </li>
+            </ul>
+
+            <div id="loginBox">
+                <a href="#">Login</a>
+                <!--Her skal være en searchbar med knap-->
+            </div>
+
+        <ul>
+            <li>Kontakt/Opret Bruger
+                <li class="submenu"><a href="#">Opret Bruger</a></li>
+                <li class="submenu"><a href="#">Skriv til os</a></li>
+            </li>
+        </ul>
+
+        <a href="http://twitter.com" target="_blank">Our Twitterpage</a>
+        <a href="http://facebook.com" target="_blank">Our Facebookpage</a>
+
+        </div>
+        <!--topmenu-->
+
+        <div id="leftmenu">
+
+                <a href="#">Tilbage</a>
+
+            <a href="ugeprogramBegyndere.aspx" class="programLink">Uge Program Begyndere</a>
+            <a href="ugeprogramOvede.aspx" class="programLink">Uge Program Øvede</a>
+            <a href="ugeprogramElite.aspx" class="programLink">Uge Program Elite</a>
+
+
+        </div>
+        <!--leftmenu-->
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div id="footer">
+        </div>
+        <!--footer-->
+    </form>
+</body>
+</html>
