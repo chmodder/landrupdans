@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="adresse.aspx" />
+    <Content Include="css\Style.css" />
     <Content Include="default.aspx" />
     <Content Include="historie.aspx" />
     <Content Include="instruktorer.aspx" />

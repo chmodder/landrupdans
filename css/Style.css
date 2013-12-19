@@ -1,0 +1,262 @@
+﻿*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+
+a:hover
+{
+    font-weight:bold;
+}
+
+body
+{
+    background-color: slategrey;
+}
+
+#Wrapper
+{
+    width: 960px;
+    margin: auto;
+    background-color: aqua;
+}
+
+#logo
+{
+    float: left;
+    width: 159px;
+    height: 130px;
+    background-color: rgb(215,217,214);
+    border-right: 1px solid black;
+}
+
+/*------------------------Menu----------------------------*/
+
+#topmenu li
+{
+    list-style: none;
+}
+
+
+#topmenu > ul > li
+{
+    height: 30px;
+    padding-top: 100px;
+    display: block;
+    width: 159px;
+    border-right: 1px solid black;
+    float: left;
+    background-color: rgb(215,217,214);
+    text-align: center;
+    font-size: 16px;
+}
+
+
+    #topmenu > ul > li:hover
+    {
+        background-color: #595958;
+        color: white;
+    }
+
+    #topmenu > ul > li > ul > li
+    {
+        position: relative;
+        top: 11px;
+        text-align: left;
+        font-size: 12px;
+        float: left;
+        height: 35px;
+    }
+
+        #topmenu > ul > li > ul > li a
+        {
+            color: white;
+        }
+
+
+            #topmenu > ul > li > ul > li a:hover
+            {
+                color: lightgrey;
+            }
+
+#menuStilarter:hover ul#submenuStilarter li
+{
+    display: block;
+}
+
+#menuOmSkolen:hover ul#submenuOmSkolen li
+{
+    display: block;
+}
+
+#menuTurneringer:hover ul#submenuTurneringer li
+{
+    display: block;
+}
+
+/*--------------------undermenuer----------------------------*/
+
+#submenuStilarter
+{
+}
+
+    #submenuStilarter li
+    {
+        display: none;
+        background-color: #595958;
+        width: 800px;
+    }
+
+        #submenuStilarter li a
+        {
+            display: block;
+            width: 800px;
+            height: 35px;
+        }
+
+/*----------------------------------------------------*/
+
+
+#submenuOmSkolen
+{
+}
+
+
+    #submenuOmSkolen li
+    {
+        left: -160px;
+        display: none;
+        background-color: #595958;
+        width: 160px;
+    }
+
+        #submenuOmSkolen li a
+        {
+            display: block;
+            width: 160px;
+            height: 35px;
+        }
+
+
+/*----------------------------------------------------*/
+
+
+#submenuTurneringer
+{
+}
+
+    #submenuTurneringer li
+    {
+        display: none;
+        left: -320px;
+        background-color: #595958;
+        width: 400px;
+    }
+
+        #submenuTurneringer li a
+        {
+            display: block;
+            width: 400px;
+            height: 35px;
+        }
+/*-----------------Højremenu med søgefelt og sociale medier links------------*/
+
+
+#topmenuRight
+{
+    width: 320px;
+    height: 130px;
+    float: left;
+    background-color: lightseagreen;
+}
+
+#topmenuRight a
+{
+    text-decoration:none;
+    color:#6b6b6b;
+}
+
+#loginBox
+{
+    background-color: white;
+    width: 300px;
+    height: 55px;
+    padding: 10px 5px 5px 15px;
+    float: left;
+}
+
+
+.SearchBtn
+{
+    float:right;
+    width:34px;
+    height:24px;
+    color:white;
+    background-color: #595958;
+    border:none;
+    clear:right;
+}
+
+.SearchBox
+{
+    float:right;
+    width: 110px;
+    height:24px;
+    background-color:#d7d9d6;
+    border:none;
+    margin-right:10px;
+    color:white;
+}
+
+    .SearchBox:focus
+    {
+        color:black;
+    }
+
+/*------------------------Venstre menu-bjælke-----------------------*/
+
+
+#leftmenu
+{
+    float: left;
+    width: 160px;
+    height: 540px;
+    background-color: lightslategrey;
+}
+
+#Tilbage
+{
+    float: left;
+    width: 160px;
+    height: 35px;
+    background-color: white;
+}
+
+.programLink
+{
+    display: block;
+    float: left;
+    width: 160px;
+    height: 180px;
+}
+
+/*------------------------indhold og artikler----------------------------*/
+
+
+article
+{
+    float: left;
+    height: 575px;
+    width: 800px;
+    background-color: antiquewhite;
+}
+
+footer footer
+{
+    float: left;
+    width: 960px;
+    height: 64px;
+    background-color: rgb(215,217,214);
+}

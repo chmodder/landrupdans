@@ -4,76 +4,113 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+
     <title></title>
+    <link href="css/Style.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div id="logo">
-        </div>
-        <!--logo-->
+        <div id="Wrapper">
+            <div id="logo">
+            </div>
+            <!--logo-->
 
-        <div id="topmenu">
+            <div id="topmenu">
 
-            <ul>
-                <li>Stilarter
-                    <li class="submenu"><a href="stilarter.aspx">Gå til stilarter</a></li>
-                </li>
+                <ul>
+                    <li id="menuStilarter">Stilarter
 
-                <li>Om Skolen
-                    <li class="submenu"><a href="undervisningsPrincipper.aspx">Undervisningsprincipper</a></li>
-                    <li class="submenu"><a href="instruktorer.aspx">Instruktører</a></li>
-                    <!--skal stå noget om instruktørerne og hvad de underviser i-->
-                    <li class="submenu"><a href="historie.aspx">Historie</a></li>
-                    <li class="submenu"><a href="priser.aspx">Priser</a></li>
-                    <li class="submenu"><a href="adresse.aspx">Adresse</a></li>
-                </li>
+                        <ul id="submenuStilarter">
+                            <li><a href="stilarter.aspx">Gå til stilarter</a></li>
+                        </ul>
 
-                <li>Turneringer
-                    <li class="submenu"><a href="turneringsKalender.aspx">Kalender</a></li>
-                    <li class="submenu"><a href="turneringsVindere.aspx">Turneringsvindere</a></li>
-                </li>
-            </ul>
+                    </li>
 
-            <div id="loginBox">
-                <a href="#">Login</a>
-                <!--Her skal være en searchbar med knap-->
+                    <li id="menuOmSkolen">Om Skolen
+
+                        <ul id="submenuOmSkolen">
+                            <li><a href="undervisningsPrincipper.aspx">Undervisningsprincipper</a></li>
+                            <li><a href="instruktorer.aspx">Instruktører</a></li>
+                            <!--skal stå noget om instruktørerne og hvad de underviser i-->
+                            <li><a href="historie.aspx">Historie</a></li>
+                            <li><a href="priser.aspx">Priser</a></li>
+                            <li><a href="adresse.aspx">Adresse</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li id="menuTurneringer">Turneringer
+
+                        <ul id="submenuTurneringer">
+                            <li><a href="turneringsKalender.aspx">Kalender</a></li>
+                            <li><a href="turneringsVindere.aspx">Turneringsvindere</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+
             </div>
 
-        <ul>
-            <li>Kontakt/Opret Bruger
-                <li class="submenu"><a href="#">Opret Bruger</a></li>
-                <li class="submenu"><a href="#">Skriv til os</a></li>
-            </li>
-        </ul>
+            <!--topmenu-->
 
-        <a href="http://twitter.com" target="_blank">Our Twitterpage</a>
-        <a href="http://facebook.com" target="_blank">Our Facebookpage</a>
+            <div id="topmenuRight">
+
+                <div id="loginBox">
+                    <a href="#">Login</a>
+
+                    <asp:RadioButtonList ID="SearchRadioList" runat="server"></asp:RadioButtonList>
+                    <asp:Button CssClass="SearchBtn" ID="SearchBtn" runat="server" Text="Ok" />
+                    <asp:TextBox CssClass="SearchBox" ID="SearchText" runat="server"></asp:TextBox>
+                </div>
+
+
+
+                <div>
+                    <ul>
+                        <li>Kontakt/Opret Bruger
+                        <ul class="submenu">
+
+                            <asp:Panel ID="CreateUserPanel" runat="server">
+                                <li><a href="#">Opret Bruger</a></li>
+                            </asp:Panel>
+
+                            <li><a href="#">Skriv til os</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="http://twitter.com" target="_blank">Our Twitterpage</a>
+                <a href="http://facebook.com" target="_blank">Our Facebookpage</a>
+            </div>
+
+            <div id="leftmenu">
+
+                <a id="Tilbage" href="#">Tilbage</a>
+
+                <a href="ugeprogramBegyndere.aspx" class="programLink">
+                    <img src="img/leftmenu/begyndere-tile.jpg" /></a>
+                <a href="ugeprogramOvede.aspx" class="programLink">
+                    <img src="img/leftmenu/ovede-tile.jpg" /></a>
+                <a href="ugeprogramElite.aspx" class="programLink">
+                    <img src="img/leftmenu/elite-tile.jpg" /></a>
+
+
+            </div>
+            <!--leftmenu-->
+
+            <article>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </article>
+
+            <footer>
+            </footer>
+            <!--footer-->
 
         </div>
-        <!--topmenu-->
-
-        <div id="leftmenu">
-
-                <a href="#">Tilbage</a>
-
-            <a href="ugeprogramBegyndere.aspx" class="programLink">Uge Program Begyndere</a>
-            <a href="ugeprogramOvede.aspx" class="programLink">Uge Program Øvede</a>
-            <a href="ugeprogramElite.aspx" class="programLink">Uge Program Elite</a>
-
-
-        </div>
-        <!--leftmenu-->
-
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
-
-        <div id="footer">
-        </div>
-        <!--footer-->
     </form>
 </body>
 </html>
