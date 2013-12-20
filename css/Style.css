@@ -5,11 +5,20 @@
     font-family: Arial;
 }
 
+/*Styler links som ligger i "lister i lister"*/
 ul > li > ul > li > a
 {
     text-decoration: none;
     font-size: 12px;
 }
+
+/*Styler links som ligger i "lister i lister" med panel i andet liste niveau*/
+ul > li > ul > div  > li > a
+{
+    text-decoration: none;
+    font-size: 12px;
+}
+
 
 a:hover
 {
@@ -228,7 +237,7 @@ body
         float: left;
         padding: 0 5px 0 5px;
     }
-    
+
 
     /*#Contact ul > li > ul > li:first-child a::after
     {
@@ -241,7 +250,16 @@ body
         content:"| ";
         margin-right:10px;
     }*/
+    
+    /*Spå elementer i panel til opret menuen*/
+    #Contact > ul > li > ul > div > li a
+    {
+        float: left;
+        line-height: 35px;
+        color: white;
+    }
 
+    /*Styler på elementer til opret menuen*/
     #Contact > ul > li > ul > li > a
     {
         float: left;
@@ -288,7 +306,7 @@ body
 {
     float: left;
     width: 160px;
-    height: 540px;
+    height: 575px;
     background-color: lightslategrey;
 }
 

@@ -67,21 +67,34 @@
                 </div>
 
 
-
                 <div id="Contact">
-                    <ul>
-                        <li>Kontakt/<br />
-                            Opret Bruger
+
+                    <asp:Panel ID="KontaktPnl" runat="server">
+                        <ul>
+                            <li>Kontakt
+                        <ul class="submenu">
+                            
+                            <li><a href="#">Skriv til os</a></li>
+                        </ul>
+                            </li>
+                        </ul>
+
+                    </asp:Panel>
+
+                    <asp:Panel ID="OpretBrugerPnl" runat="server" Visible="False">
+                        <ul>
+                            <li>Kontakt/<br />
+                                Opret Bruger
                         <ul class="submenu">
 
-                            <asp:Panel ID="Panel1" runat="server">
-                                <li><a class="submenulink" href="#">Opret Bruger</a></li>
-                            </asp:Panel>
+                            <li><a href="#">Opret Bruger</a></li>
 
                             <li><a href="#">Skriv til os</a></li>
                         </ul>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+
+                    </asp:Panel>
                 </div>
 
                 <a class="SocialMediaLinks" id="TwitterLink" href="http://twitter.com" target="_blank"></a>
