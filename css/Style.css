@@ -5,15 +5,20 @@
     font-family: Arial;
 }
 
+ul > li > ul > li > a
+{
+    text-decoration: none;
+    font-size: 12px;
+}
 
 a:hover
 {
-    font-weight:bold;
+    text-decoration: underline;
 }
 
 body
 {
-    background-color: slategrey;
+    /*background-color: slategrey;*/
 }
 
 #Wrapper
@@ -34,133 +39,90 @@ body
 
 /*------------------------Menu----------------------------*/
 
-#topmenu li
+#topmenu
 {
-    list-style: none;
 }
 
-
-#topmenu > ul > li
-{
-    height: 30px;
-    padding-top: 100px;
-    display: block;
-    width: 159px;
-    border-right: 1px solid black;
-    float: left;
-    background-color: rgb(215,217,214);
-    text-align: center;
-    font-size: 16px;
-}
-
-
-    #topmenu > ul > li:hover
+    #topmenu li
     {
-        background-color: #595958;
-        color: white;
+        list-style: none;
     }
 
-    #topmenu > ul > li > ul > li
+    #topmenu > ul > li
     {
-        position: relative;
-        top: 11px;
-        text-align: left;
-        font-size: 12px;
+        height: 30px;
+        padding-top: 100px;
+        display: block;
+        width: 159px;
+        border-right: 1px solid black;
         float: left;
-        height: 35px;
+        background-color: rgb(215,217,214);
+        text-align: center;
+        font-size: 16px;
     }
 
-        #topmenu > ul > li > ul > li a
+
+        #topmenu > ul > li:hover
         {
+            background-color: #595958;
             color: white;
         }
 
-
-            #topmenu > ul > li > ul > li a:hover
-            {
-                color: lightgrey;
-            }
-
-#menuStilarter:hover ul#submenuStilarter li
-{
-    display: block;
-}
-
-#menuOmSkolen:hover ul#submenuOmSkolen li
-{
-    display: block;
-}
-
-#menuTurneringer:hover ul#submenuTurneringer li
-{
-    display: block;
-}
-
-/*--------------------undermenuer----------------------------*/
-
-#submenuStilarter
-{
-}
-
-    #submenuStilarter li
-    {
-        display: none;
-        background-color: #595958;
-        width: 800px;
-    }
-
-        #submenuStilarter li a
+        #topmenu > ul > li > ul
         {
-            display: block;
+            height: 35px;
+            display: none;
+            position: relative;
+            top: 11px;
+            background-color: #595958;
             width: 800px;
-            height: 35px;
         }
 
-/*----------------------------------------------------*/
 
+        #topmenu > ul > li:hover > ul
+        {
+            display: inline-block;
+        }
 
-#submenuOmSkolen
+    #topmenu ul > li > ul > li
+    {
+        float: left;
+        padding: 0 5px 0 5px;
+    }
+
+        #topmenu ul > li > ul > li > a
+        {
+            line-height: 35px;
+            color: white;
+        }
+
+    #topmenu > ul > li > ul > li > a:hover
+    {
+        color: lightgrey;
+    }
+
+#menuStilarter:hover ul#submenuStilarter
 {
+    display: inline-block;
+    left: 0px;
+    width: 800px;
+}
+
+#menuOmSkolen:hover ul#submenuOmSkolen
+{
+    display: inline-block;
+    left: -1px;
+    width: 641px;
+}
+
+#menuTurneringer:hover ul#submenuTurneringer
+{
+    display: inline-block;
+    left: -1px;
+    width: 481px;
 }
 
 
-    #submenuOmSkolen li
-    {
-        left: -160px;
-        display: none;
-        background-color: #595958;
-        width: 160px;
-    }
-
-        #submenuOmSkolen li a
-        {
-            display: block;
-            width: 160px;
-            height: 35px;
-        }
-
-
-/*----------------------------------------------------*/
-
-
-#submenuTurneringer
-{
-}
-
-    #submenuTurneringer li
-    {
-        display: none;
-        left: -320px;
-        background-color: #595958;
-        width: 400px;
-    }
-
-        #submenuTurneringer li a
-        {
-            display: block;
-            width: 400px;
-            height: 35px;
-        }
 /*-----------------Højremenu med søgefelt og sociale medier links------------*/
 
 
@@ -172,17 +134,13 @@ body
     background-color: lightseagreen;
 }
 
-#topmenuRight a
-{
-    text-decoration:none;
-    color:#6b6b6b;
-}
 
 #loginBox
 {
     background-color: white;
     width: 300px;
-    height: 55px;
+    height: 49px;
+    border-bottom: 1px solid black;
     padding: 10px 5px 5px 15px;
     float: left;
 }
@@ -190,30 +148,138 @@ body
 
 .SearchBtn
 {
-    float:right;
-    width:34px;
-    height:24px;
-    color:white;
+    float: right;
+    width: 34px;
+    height: 24px;
+    color: white;
     background-color: #595958;
-    border:none;
-    clear:right;
+    border: none;
+    clear: right;
 }
 
 .SearchBox
 {
-    float:right;
+    float: right;
     width: 110px;
-    height:24px;
-    background-color:#d7d9d6;
-    border:none;
-    margin-right:10px;
-    color:white;
+    height: 24px;
+    background-color: #d7d9d6;
+    border: none;
+    margin-right: 10px;
+    color: white;
 }
 
     .SearchBox:focus
     {
-        color:black;
+        color: black;
     }
+
+/*------------------------Contact menu------------------*/
+
+#Contact
+{
+    float: left;
+    width: 160px;
+    height: 64px;
+}
+
+
+        #Contact li
+        {
+            list-style-type:none;
+        }
+        
+    #Contact > ul > li
+    {
+        float:left;
+        display: block;
+        width: 134px;
+        height: 55px;
+        padding-left:25px;
+        padding-top:10px;
+        border-right: 1px solid black;
+        background-color:white;
+    }
+
+        #Contact > ul > li:hover
+        {
+            background-color: #595958;
+            color: white;
+        }
+
+        #Contact > ul > li > ul
+        {
+            height: 35px;
+            display: none;
+            position: relative;
+            top: 17px;
+            left:-26px;
+            background-color: #595958;
+        }
+
+
+    #Contact > ul > li:hover > ul
+    {
+        width:321px;
+        display: inline-block;
+    }
+    
+    #Contact ul > li > ul > li
+    {
+        float: left;
+        padding: 0 5px 0 5px;
+    }
+    
+
+    /*#Contact ul > li > ul > li:first-child a::after
+    {
+        content:" |";
+        margin-right:10px;
+    }
+    
+    #Contact ul > li > ul > li:last-child a::before
+    {
+        content:"| ";
+        margin-right:10px;
+    }*/
+
+    #Contact > ul > li > ul > li > a
+    {
+        float: left;
+        line-height: 35px;
+        color: white;
+    }
+    
+    #Contact > ul > li > ul > li > a:hover
+    {
+        color: lightgrey;
+    }
+
+    /*--------------------social media links----------------------*/
+
+.SocialMediaLinks
+{
+    display:block;
+    width:80px;
+    height:65px;
+    float:left;
+    opacity:0.4;
+}
+
+.SocialMediaLinks:hover
+{
+    opacity:1;
+}
+
+#TwitterLink
+{
+    background-image:url(../img/rightmenu/twitter.jpg);
+}
+
+#FacebookLink
+{
+    background-image:url(../img/rightmenu/facebook.jpg);
+}
+
 
 /*------------------------Venstre menu-bjælke-----------------------*/
 
@@ -240,8 +306,13 @@ body
     float: left;
     width: 160px;
     height: 180px;
+    opacity:0.6;
 }
 
+.programLink:hover
+{
+    opacity:1.0;
+}
 /*------------------------indhold og artikler----------------------------*/
 
 
@@ -250,10 +321,10 @@ article
     float: left;
     height: 575px;
     width: 800px;
-    background-color: antiquewhite;
+    /*background-color: antiquewhite;*/
 }
 
-footer footer
+footer
 {
     float: left;
     width: 960px;

@@ -58,6 +58,7 @@
             <div id="topmenuRight">
 
                 <div id="loginBox">
+
                     <a href="#">Login</a>
 
                     <asp:RadioButtonList ID="SearchRadioList" runat="server"></asp:RadioButtonList>
@@ -67,13 +68,14 @@
 
 
 
-                <div>
+                <div id="Contact">
                     <ul>
-                        <li>Kontakt/Opret Bruger
+                        <li>Kontakt/<br />
+                            Opret Bruger
                         <ul class="submenu">
 
-                            <asp:Panel ID="CreateUserPanel" runat="server">
-                                <li><a href="#">Opret Bruger</a></li>
+                            <asp:Panel ID="Panel1" runat="server">
+                                <li><a class="submenulink" href="#">Opret Bruger</a></li>
                             </asp:Panel>
 
                             <li><a href="#">Skriv til os</a></li>
@@ -82,8 +84,8 @@
                     </ul>
                 </div>
 
-                <a href="http://twitter.com" target="_blank">Our Twitterpage</a>
-                <a href="http://facebook.com" target="_blank">Our Facebookpage</a>
+                <a class="SocialMediaLinks" id="TwitterLink" href="http://twitter.com" target="_blank"></a>
+                <a class="SocialMediaLinks" id="FacebookLink" href="http://facebook.com" target="_blank"></a>
             </div>
 
             <div id="leftmenu">
